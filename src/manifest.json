@@ -1,0 +1,20 @@
+{
+  "start_url": ".",
+  "_version": "1.1.0",
+  "sap.app": {
+    "id": "4451114515158",
+    "type": "application",
+    "title": "FBI",
+    "applicationVersion": {
+      "version": "0.0.1"
+    }
+  },
+  "sap.ui": {
+    "technology": "GUI",
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": false,
+      "phone": false
+    }
+  }
+}
