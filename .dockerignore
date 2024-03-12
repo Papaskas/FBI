@@ -10,7 +10,4 @@
 Dockerfile
 README.md
 .gitignore
-.editorconfig
-TODO.md
 makefile
-
