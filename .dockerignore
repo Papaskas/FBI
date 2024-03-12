@@ -1,0 +1,16 @@
+/.idea
+/.vscode
+/.git
+/.husky
+/node_modules
+/dist
+/coverage
+/.angular
+
+Dockerfile
+README.md
+.gitignore
+.editorconfig
+TODO.md
+makefile
+
