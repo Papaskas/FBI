@@ -5,6 +5,7 @@
 /node_modules
 /dist
 /coverage
+/.angular/cache
 
 Dockerfile
 README.md
