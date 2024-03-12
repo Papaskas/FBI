@@ -25,7 +25,6 @@
     ],
     "baseUrl": "./src",
     "paths": {
-      "@angular/*": [ "../node_modules/@angular/*" ],
       "@app/*": ["app/*"],
       "@views/*": ["app/views/*"],
       "@containers/*": ["app/containers/*"],
