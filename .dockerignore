@@ -5,9 +5,9 @@
 /node_modules
 /dist
 /coverage
-/.angular
 
 Dockerfile
 README.md
 .gitignore
 makefile
+LICENSE
