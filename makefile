@@ -3,9 +3,9 @@ run:
 	docker run --rm -p 80:80 papaskas/fbi
 
 push:
-	docker build -t papaskas/portfolio .
-	docker push papaskas/portfolio
+	docker build -t papaskas/fbi .
+	docker push papaskas/fbi
 
 pull:
-	docker image pull papaskas/portfolio
-	docker run --rm -p 80:80 papaskas/portfolio
+	docker image pull papaskas/fbi
+	docker run --rm -p 80:80 papaskas/fbi
