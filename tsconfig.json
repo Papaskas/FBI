@@ -31,7 +31,8 @@
       "@containers/*": ["app/containers/*"],
       "@store/*": ["app/store/*"],
       "@services/*": ["app/services/*"],
-      "@components/*": ["app/components/*"]
+      "@components/*": ["app/components/*"],
+      "@sass/*": ["app/core/sass/*"]
     }
   },
   "angularCompilerOptions": {
