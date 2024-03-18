@@ -1,0 +1,15 @@
+.application {
+  cursor: pointer;
+  display: inline-block;
+
+  &__icon {
+    max-width: 20px;
+    max-height: 20px;
+    position: static !important;
+  }
+
+  &__title {
+    margin: 0;
+    text-align: center;
+  }
+}

@@ -1,8 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-application',
+  standalone: true,
   templateUrl: './application.component.html',
-  styleUrl: './application.component.css',
+  styleUrl: './application.component.scss',
+  imports: [NgOptimizedImage],
 })
-export class ApplicationComponent {}
+export class ApplicationComponent {
+  @Input({ required: true }) icon!: string;
+
+  @Input({ required: true }) shortName!: string;
+
+  @Input({ required: true }) url!: string; /* TODO: rename to ?app name? */
+}

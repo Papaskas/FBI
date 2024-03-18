@@ -32,7 +32,7 @@
       "@store/*": ["app/store/*"],
       "@services/*": ["app/services/*"],
       "@components/*": ["app/components/*"],
-      "@sass/*": ["app/core/sass/*"]
+      "@sass/*": ["sass/*"]
     }
   },
   "angularCompilerOptions": {

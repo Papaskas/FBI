@@ -1,3 +1,25 @@
 .desktop {
-  border: 1px solid red;
+  width: calc(100vw - 50px);
+  height: calc(100vh - 50px);
+  padding: 25px;
+
+  &__background {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-image: url("assets/FBI (big logo).svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__applications {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
