@@ -7,8 +7,6 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterOutlet],
   templateUrl: './desktop.component.html',
-  styleUrl: './desktop.component.css',
+  styleUrl: './desktop.component.scss',
 })
-export class DesktopComponent {
-  title = 'FBI';
-}
+export class DesktopComponent {}

@@ -1,5 +1,10 @@
 {
   "name": "fbi",
+  "author": {
+    "email": "papaskaaaa@gmail.com",
+    "name": "Pavel Glukhikh",
+    "url": "https://github.com/Papaskas"
+  },
   "version": "0.0.1",
   "scripts": {
     "ng": "ng",
@@ -7,6 +12,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "cypress.open": "cypress open",
     "lint": "ng lint"
   },
   "lint-staged": {
@@ -24,6 +30,7 @@
     "@angular/platform-browser": "^17.0.0",
     "@angular/platform-browser-dynamic": "^17.0.0",
     "@angular/router": "^17.0.0",
+    "@nrwl/angular": "18.0.8",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2"
@@ -37,9 +44,12 @@
     "@angular-eslint/template-parser": "17.2.1",
     "@angular/cli": "^17.0.8",
     "@angular/compiler-cli": "^17.0.0",
+    "@cypress/schematic": "^2.5.1",
+    "@types/cypress": "^1.1.3",
     "@types/jasmine": "~5.1.0",
     "@typescript-eslint/eslint-plugin": "6.19.0",
     "@typescript-eslint/parser": "6.19.0",
+    "cypress": "^13.6.6",
     "eslint": "^8.56.0",
     "eslint-config-airbnb-typescript": "^18.0.0",
     "eslint-config-prettier": "^9.1.0",
