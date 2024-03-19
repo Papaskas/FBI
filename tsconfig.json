@@ -27,12 +27,9 @@
     "baseUrl": "./src",
     "paths": {
       "@app/*": ["app/*"],
-      "@views/*": ["app/views/*"],
-      "@containers/*": ["app/containers/*"],
       "@store/*": ["app/store/*"],
       "@services/*": ["app/services/*"],
-      "@components/*": ["app/components/*"],
-      "@sass/*": ["sass/*"]
+      "@components/*": ["app/components/*"]
     }
   },
   "angularCompilerOptions": {

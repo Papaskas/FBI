@@ -1,0 +1,25 @@
+@import 'variables';
+
+.desktop-shortcut {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  padding: 0 10px;
+
+  &__icon {
+    max-width: 45px;
+    max-height: 45px;
+    position: static !important;
+  }
+
+  &__title {
+    margin: 0;
+    max-width: 55px;
+    color: white;
+    word-break: break-word;
+  }
+
+  &:active, &:focus {
+    background-color: rgba(#77DDE7, .2);
+  }
+}

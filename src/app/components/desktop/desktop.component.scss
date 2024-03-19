@@ -1,7 +1,9 @@
+@import 'variables';
+
 .desktop {
-  width: calc(100vw - 50px);
-  height: calc(100vh - 50px);
-  padding: 25px;
+  width: calc(100vw - 20px);
+  height: calc(100vh - 20px);
+  padding: 10px;
 
   &__background {
     z-index: -1;
@@ -15,11 +17,25 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    background-color: $BG;
+    filter: brightness(75%);
   }
 
   &__applications {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
+    max-height: calc(100% - 50px);
+    align-content: flex-start;
+    gap: 15px;
+  }
+
+  @media (min-width: $lg) {
+    width: calc(100vw - 50px);
+    height: calc(100vh - 50px);
+    padding: 25px;
+
+    &__applications {
+      max-height: calc(100% - 100px);
+    }
   }
 }
