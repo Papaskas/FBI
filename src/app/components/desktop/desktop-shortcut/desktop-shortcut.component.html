@@ -1,4 +1,12 @@
-<button class="desktop-shortcut" (dblclick)="dblClick()">
+<button
+    class="desktop-shortcut"
+    (dblclick)="dblclick()"
+    [title]="shortName"
+    type="button"
+>
     <img [ngSrc]="icon" [alt]="shortName" fill="contain" class="desktop-shortcut__icon" />
     <p class="desktop-shortcut__title">{{ shortName }}</p>
 </button>
+
+<app-most-wanted [showApplication]="showApplication" />
+

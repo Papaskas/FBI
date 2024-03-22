@@ -1,0 +1,11 @@
+<ng-template [ngIf]="showApplication">
+    <body class="application-container">
+        <header class="application-container__header">
+            most wanted
+            <button (click)="close()">close</button>
+        </header>
+        <main class="application-container__main">
+            <ng-content />
+        </main>
+    </body>
+</ng-template>

@@ -21,11 +21,12 @@
     filter: brightness(75%);
   }
 
-  &__applications {
+  &__shortcuts {
     display: flex;
     flex-flow: column wrap;
     max-height: calc(100% - 50px);
     align-content: flex-start;
+    overflow: hidden;
     gap: 15px;
   }
 
@@ -34,7 +35,7 @@
     height: calc(100vh - 50px);
     padding: 25px;
 
-    &__applications {
+    &__shortcuts {
       max-height: calc(100% - 100px);
     }
   }

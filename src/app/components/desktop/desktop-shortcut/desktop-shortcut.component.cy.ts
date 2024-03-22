@@ -1,6 +1,6 @@
 import { DesktopShortcutComponent } from './desktop-shortcut.component';
 
-describe('ApplicationComponent', () => {
+describe('DesktopShortcutComponent', () => {
   it('should mount', () => {
     cy.mount(DesktopShortcutComponent);
   });
