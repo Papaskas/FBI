@@ -10,7 +10,7 @@ COPY . .
 
 RUN yarn build
 
-FROM nginx:1.25.4 AS prod
+FROM nginx:1.25.4
 
 RUN rm -rf /usr/share/nginx/html/*
 
