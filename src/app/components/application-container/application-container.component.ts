@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { NgIf } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-application-container',
@@ -9,9 +10,11 @@ import { NgIf } from '@angular/common';
   imports: [NgIf],
 })
 export class ApplicationContainerComponent {
-  @Input({ required: true }) showApplication = false;
+  @Input({ required: true }) appName: string;
 
-  protected close() {
-    this.showApplication = false;
+  constructor(private router: Router) {}
+
+  protected async closeApp() {
+    await this.router.navigate(['']);
   }
 }

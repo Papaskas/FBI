@@ -1,23 +1,24 @@
 import { Component, Input } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
-import { ApplicationContainerComponent } from '@components/applications/application-container/application-container.component';
-import { MostWantedComponent } from '@components/applications/most-wanted/most-wanted.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-desktop-shortcut',
   standalone: true,
   templateUrl: './desktop-shortcut.component.html',
   styleUrl: './desktop-shortcut.component.scss',
-  imports: [NgOptimizedImage, ApplicationContainerComponent, MostWantedComponent],
+  imports: [NgOptimizedImage],
 })
 export class DesktopShortcutComponent {
   @Input({ required: true }) icon: string;
 
   @Input({ required: true }) shortName: string;
 
-  protected showApplication = false;
+  @Input({ required: true }) url: string;
 
-  protected dblclick() {
-    this.showApplication = !this.showApplication;
+  constructor(private router: Router) {}
+
+  protected async dblclick() {
+    await this.router.navigate([this.url]);
   }
 }

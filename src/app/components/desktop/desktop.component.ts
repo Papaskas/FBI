@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { DockBarComponent } from './dock-bar/dock-bar.component';
 import { DesktopShortcutComponent } from '@components/desktop/desktop-shortcut/desktop-shortcut.component';
-import { ApplicationContainerComponent } from '@components/applications/application-container/application-container.component';
+import { ApplicationContainerComponent } from '@components/application-container/application-container.component';
+import { URL } from '@app/app.routes';
 
 @Component({
   selector: 'app-desktop',
@@ -10,4 +11,6 @@ import { ApplicationContainerComponent } from '@components/applications/applicat
   templateUrl: './desktop.component.html',
   styleUrl: './desktop.component.scss',
 })
-export class DesktopComponent {}
+export class DesktopComponent {
+  protected readonly URL = URL;
+}

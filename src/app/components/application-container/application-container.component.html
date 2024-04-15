@@ -1,0 +1,12 @@
+<body class="application-container">
+
+    <header class="application-container__header">
+        <p>{{ appName }}</p>
+        <button class="application-container__close" (click)="closeApp()">close</button>
+    </header>
+
+    <main class="application-container__main">
+        <ng-content />
+    </main>
+
+</body>

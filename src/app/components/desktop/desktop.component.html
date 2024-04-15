@@ -2,7 +2,8 @@
     <div class="desktop__background"></div>
 
     <div class="desktop__shortcuts">
-        <app-desktop-shortcut shortName="Most wanted" icon="assets/folder (blue).svg" />
+        <app-desktop-shortcut shortName="Most wanted" icon="assets/folder (blue).svg" [url]="URL.mostWanted" />
+        <app-desktop-shortcut shortName="Doom" icon="assets/folder (blue).svg" [url]="URL.doom" />
     </div>
 
     <app-dock-bar />
