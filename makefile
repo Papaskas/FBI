@@ -8,4 +8,3 @@ push:
 
 pull:
 	docker image pull papaskas/fbi
-	docker run --rm -p 80:80 papaskas/fbi
