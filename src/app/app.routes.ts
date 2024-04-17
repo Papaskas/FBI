@@ -1,13 +1,16 @@
 import { Routes } from '@angular/router';
-import { MostWantedComponent } from '@app/pages/most-wanted/most-wanted.component';
-import { DoomComponent } from '@app/pages/doom/doom.component';
+import { MostWantedComponent } from '@app/applications/most-wanted/most-wanted.component';
+import { DoomComponent } from '@app/applications/doom/doom.component';
+import { NewsComponent } from '@app/applications/news/news.component';
 
 export enum URL {
-  mostWanted = 'application/most-wanted',
-  doom = 'application/doom',
+  mostWanted = 'most-wanted',
+  doom = 'doom',
+  news = 'news',
 }
 
 export const routes: Routes = [
   { path: URL.mostWanted, component: MostWantedComponent },
   { path: URL.doom, component: DoomComponent },
+  { path: URL.news, component: NewsComponent },
 ];
