@@ -16,9 +16,9 @@ export class DesktopShortcutComponent {
 
   @Input({ required: true }) url: string;
 
-  constructor(private router: Router) {}
+  constructor(private readonly router: Router) {}
 
-  protected async dblclick() {
+  protected async open() {
     await this.router.navigate([this.url]);
   }
 }

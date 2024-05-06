@@ -6,8 +6,8 @@
   padding: 10px;
 
   &__background {
-    z-index: -1;
     position: absolute;
+    z-index: -1;
     top: 0;
     bottom: 0;
     left: 0;
@@ -24,9 +24,9 @@
   &__shortcuts {
     display: flex;
     flex-flow: column wrap;
-    max-height: calc(100% - 50px);
     align-content: flex-start;
     align-items: center;
+    max-height: calc(100% - 50px);
     overflow: hidden;
     gap: 15px;
   }

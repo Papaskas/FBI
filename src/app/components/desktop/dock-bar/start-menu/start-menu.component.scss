@@ -2,12 +2,12 @@
 
 .start-menu {
   height: 100%;
-  color: $Primary;
+  color: $White;
   cursor: pointer;
   border-radius: 0 15px 0 0;
   padding: 0 15px;
 
   &:hover, &:active, &:focus {
-    background-color: rgba(#0000CC, .3);
+    background-color: rgba($Black, .3);
   }
 }

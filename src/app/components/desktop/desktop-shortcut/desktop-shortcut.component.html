@@ -1,6 +1,7 @@
 <button
     class="desktop-shortcut"
-    (dblclick)="dblclick()"
+    (keyup.enter)="open()"
+    (dblclick)="open()"
     [title]="shortName"
     type="button"
 >

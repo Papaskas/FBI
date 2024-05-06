@@ -1,18 +1,18 @@
 @import 'variables';
 
 .application-container {
-  background-color: #272727;
+  background-color: $Black2;
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   width: 100%;
   height: calc(100% - 50px); //dock-bar
-  color: white;
+  color: $White;
 
   &__header {
     padding-left: 10px;
-    background-color: #202020;
+    background-color: $Black;
     height: 45px;
 
     display: flex;
@@ -20,14 +20,10 @@
     align-items: center;
   }
 
-  &__main {
-    padding: 15px;
-  }
-
   &__close {
     cursor: pointer;
     height: 100%;
-    color: white;
+    color: $White;
     padding: 0 15px;
     transition: background-color 300ms;
 

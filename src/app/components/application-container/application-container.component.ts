@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
 import { NgIf } from '@angular/common';
 import { Router } from '@angular/router';
 
@@ -14,6 +14,7 @@ export class ApplicationContainerComponent {
 
   constructor(private router: Router) {}
 
+  @HostListener('document:keyup.escape')
   protected async closeApp() {
     await this.router.navigate(['']);
   }
