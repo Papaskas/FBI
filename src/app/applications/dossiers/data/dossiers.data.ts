@@ -1,8 +1,8 @@
-import type { MostWanted } from './@types';
+import type { Dossier } from './@types';
 
-export const mostWantedData: MostWanted[] = [
+export const dossiersData: Dossier[] = [
   {
-    name: 'Glukhikh Pavel Dmitrievich',
+    fullName: 'Glukhikh Pavel Dmitrievich',
     crime: 'unauthorized access to the Pentagon',
     reward: 'empty',
     remarks: 'empty',
@@ -19,5 +19,6 @@ export const mostWantedData: MostWanted[] = [
       race: 'white',
       NCIC: 'W76312W4A9',
     },
+    pics: ['assets/dossier/papaska.jpg'],
   },
 ];

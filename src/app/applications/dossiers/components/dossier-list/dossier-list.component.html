@@ -1,0 +1,8 @@
+@for (dossier of dossiers; track $index) {
+  <app-dossier-title-card
+    [fullName]="dossier.fullName"
+    [crime]="dossier.crime"
+    [img]="dossier.pics[0]"
+    [NCIC]="dossier.description.NCIC"
+  />
+}

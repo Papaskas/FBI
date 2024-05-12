@@ -30,7 +30,8 @@
       "@app/*": ["app/*"],
       "@store/*": ["app/store/*"],
       "@services/*": ["app/services/*"],
-      "@components/*": ["app/components/*"]
+      "@components/*": ["app/components/*"],
+      "@dossiers/*": ["app/applications/dossiers/*"]
     }
   },
   "angularCompilerOptions": {

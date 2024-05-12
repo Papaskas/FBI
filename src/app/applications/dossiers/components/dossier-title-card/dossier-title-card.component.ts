@@ -3,13 +3,13 @@ import { NgOptimizedImage } from '@angular/common';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-profile-card',
+  selector: 'app-dossier-title-card',
   standalone: true,
-  templateUrl: './profile-card.component.html',
-  styleUrl: './profile-card.component.scss',
+  templateUrl: './dossier-title-card.component.html',
+  styleUrl: './dossier-title-card.component.scss',
   imports: [NgOptimizedImage],
 })
-export class ProfileCardComponent {
+export class DossierTitleCardComponent {
   @Input({ required: true }) img: string;
 
   @Input({ required: true }) fullName: string;
@@ -21,10 +21,6 @@ export class ProfileCardComponent {
   constructor(private readonly router: Router) {}
 
   protected async openDossier() {
-    await this.router.navigate([this.NCIC]);
-  }
-
-  protected setDefaultPic(event: Event) {
-    (event.target as HTMLImageElement).src = 'https://placehold.co/600x400/EEE/31343C';
+    await this.router.navigate(['dossiers', this.NCIC]);
   }
 }

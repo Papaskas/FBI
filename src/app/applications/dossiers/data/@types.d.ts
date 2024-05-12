@@ -1,5 +1,5 @@
-export type MostWanted = {
-  name: string;
+export type Dossier = {
+  fullName: string;
   crime: string;
   reward: string;
   remarks: string;
@@ -16,4 +16,5 @@ export type MostWanted = {
     race: 'white' | 'black' | 'latina' | 'mexico';
     NCIC: string;
   };
+  pics: string[];
 };

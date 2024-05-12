@@ -1,0 +1,6 @@
+<div class="title-card">
+  <div class="title-card__img"><img [ngSrc]="img" [alt]="fullName" fill></div>
+  <h3 class="title-card__crime">{{ crime }}</h3>
+  <h2 class="title-card__full-name">{{ fullName }}</h2>
+  <button (click)="openDossier()" class="title-card__open-dossier">Open dossier</button>
+</div>

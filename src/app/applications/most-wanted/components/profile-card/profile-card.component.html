@@ -1,6 +1,0 @@
-<div class="profile-card">
-  <div class="profile-card__img"><img [ngSrc]="img" [alt]="fullName" fill (error)="setDefaultPic($event)"></div>
-  <h3 class="profile-card__crime">{{ crime }}</h3>
-  <h2 class="profile-card__full-name">{{ fullName }}</h2>
-  <button (dblclick)="openDossier()" class="profile-card__open-dossier">Open dossier</button>
-</div>
