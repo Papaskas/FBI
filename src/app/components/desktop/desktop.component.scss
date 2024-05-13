@@ -5,22 +5,6 @@
   height: calc(100vh - 20px);
   padding: 10px;
 
-  &__background {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-    background-image: url("assets/desktop/FBI (big logo).svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: $BG;
-    filter: brightness(75%);
-  }
-
   &__shortcuts {
     display: flex;
     flex-flow: column wrap;
