@@ -5,6 +5,6 @@
     [title]="shortName"
     type="button"
 >
-    <img [ngSrc]="icon" [alt]="shortName" fill class="desktop-shortcut__icon" />
+    <img [ngSrc]="icon" priority="loading" [alt]="shortName" fill class="desktop-shortcut__icon" />
     <p class="desktop-shortcut__title">{{ shortName }}</p>
 </button>
