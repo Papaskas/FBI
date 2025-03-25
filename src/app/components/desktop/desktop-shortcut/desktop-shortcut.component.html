@@ -1,10 +1,10 @@
 <button
-    class="desktop-shortcut"
-    (keyup.enter)="open()"
-    (dblclick)="open()"
-    [title]="shortName"
-    type="button"
+  class="desktop-shortcut"
+  (keyup.enter)="open()"
+  (dblclick)="open()"
+  [title]="shortName"
+  type="button"
 >
-    <img [ngSrc]="icon" priority="loading" [alt]="shortName" fill class="desktop-shortcut__icon" />
-    <p class="desktop-shortcut__title">{{ shortName }}</p>
+  <img [ngSrc]="icon" priority="loading" [alt]="shortName" fill class="desktop-shortcut__icon" />
+  <p class="desktop-shortcut__title">{{ shortName }}</p>
 </button>
