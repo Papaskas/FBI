@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ApplicationContainerComponent } from '@components/application-container/application-container.component';
+import { WindowManagerComponent } from '@components/window-manager/window-manager.component';
 import { DossierTitleCardComponent } from '@dossiers/components/dossier-title-card/dossier-title-card.component';
 import { RouterOutlet } from '@angular/router';
 
@@ -8,6 +8,6 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   templateUrl: './dossiers.component.html',
   styleUrl: './dossiers.component.scss',
-  imports: [ApplicationContainerComponent, DossierTitleCardComponent, RouterOutlet],
+  imports: [WindowManagerComponent, DossierTitleCardComponent, RouterOutlet],
 })
 export class DossiersComponent {}

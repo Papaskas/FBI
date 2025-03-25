@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { ApplicationContainerComponent } from '@components/application-container/application-container.component';
+import { WindowManagerComponent } from '@components/window-manager/window-manager.component';
 
 @Component({
   selector: 'app-doom',
   standalone: true,
   templateUrl: './doom.component.html',
   styleUrl: './doom.component.scss',
-  imports: [ApplicationContainerComponent],
+  imports: [WindowManagerComponent],
 })
 export class DoomComponent {}

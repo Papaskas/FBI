@@ -3,13 +3,13 @@ import { NgIf } from '@angular/common';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-application-container',
+  selector: 'app-window-manager',
   standalone: true,
-  templateUrl: './application-container.component.html',
-  styleUrl: './application-container.component.scss',
+  templateUrl: './window-manager.component.html',
+  styleUrl: './window-manager.component.scss',
   imports: [NgIf],
 })
-export class ApplicationContainerComponent {
+export class WindowManagerComponent {
   @Input({ required: true }) appName: string;
 
   constructor(private router: Router) {}
