@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { WindowManagerComponent } from '@components/window-manager/window-manager.component';
+import { WindowManagerComponent } from '@widgets/window-manager/window-manager.component';
 
 @Component({
   selector: 'app-doom',

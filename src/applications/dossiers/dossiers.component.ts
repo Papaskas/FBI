@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { WindowManagerComponent } from '@components/window-manager/window-manager.component';
 import { DossierTitleCardComponent } from '@dossiers/components/dossier-title-card/dossier-title-card.component';
 import { RouterOutlet } from '@angular/router';
+import { WindowManagerComponent } from '@widgets/window-manager/window-manager.component';
 
 @Component({
   selector: 'app-dossiers',

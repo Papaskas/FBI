@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { DossierComponent } from '@app/applications/dossiers/components/dossier/dossier.component';
 import { DossierListComponent } from '@dossiers/components/dossier-list/dossier-list.component';
+import { DossierComponent } from '@dossiers/components/dossier/dossier.component';
 
 export enum URL {
   DOSSIERS = 'dossiers',

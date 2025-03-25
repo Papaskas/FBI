@@ -30,17 +30,23 @@
       "@app/*": [
         "app/*"
       ],
-      "@store/*": [
-        "app/store/*"
+      "@os/*": [
+        "OS/*"
       ],
       "@services/*": [
         "app/services/*"
       ],
-      "@components/*": [
-        "app/components/*"
+      "@widgets/*": [
+        "app/widgets/*"
       ],
       "@dossiers/*": [
-        "app/applications/dossiers/*"
+        "applications/dossiers/*"
+      ],
+      "@doom/*": [
+        "applications/doom/*"
+      ],
+      "@news/*": [
+        "applications/news/*"
       ]
     }
   },

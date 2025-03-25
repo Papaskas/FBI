@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
 import { DossiersComponent } from '@dossiers/dossiers.component';
-import { DoomComponent } from '@app/applications/doom/doom.component';
-import { NewsComponent } from '@app/applications/news/news.component';
 import { routes as routesMostWanted } from '@dossiers/dossiers.routes';
+import { DoomComponent } from '@doom/doom.component';
+import { NewsComponent } from '@news/news.component';
 
 export enum URL {
   DOSSIERS = 'dossiers',

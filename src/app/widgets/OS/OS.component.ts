@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DesktopComponent } from '@components/desktop/desktop.component';
+import { DesktopComponent } from '@widgets/desktop/desktop.component';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
