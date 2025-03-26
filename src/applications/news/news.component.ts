@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { WindowManagerComponent } from '@widgets/window-manager/window-manager.component';
+import { WindowManagerComponent } from '../window-manager/window-manager.component';
 
 @Component({
   selector: 'app-news',
