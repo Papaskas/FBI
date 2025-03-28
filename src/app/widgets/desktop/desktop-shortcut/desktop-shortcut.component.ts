@@ -4,9 +4,9 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-desktop-shortcut',
-  standalone: true,
   templateUrl: './desktop-shortcut.component.html',
   styleUrl: './desktop-shortcut.component.scss',
+  standalone: true,
   imports: [NgOptimizedImage],
 })
 export class DesktopShortcutComponent {

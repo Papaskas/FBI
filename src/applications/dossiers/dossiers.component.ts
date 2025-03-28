@@ -4,10 +4,9 @@ import { RouterOutlet } from '@angular/router';
 import { WindowManagerComponent } from '../window-manager/window-manager.component';
 
 @Component({
-  selector: 'app-dossiers',
-  standalone: true,
-  templateUrl: './dossiers.component.html',
-  styleUrl: './dossiers.component.scss',
-  imports: [WindowManagerComponent, DossierTitleCardComponent, RouterOutlet],
+    selector: 'app-dossiers',
+    templateUrl: './dossiers.component.html',
+    styleUrl: './dossiers.component.scss',
+    imports: [WindowManagerComponent, DossierTitleCardComponent, RouterOutlet]
 })
 export class DossiersComponent {}

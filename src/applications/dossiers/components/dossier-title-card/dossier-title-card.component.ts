@@ -3,11 +3,10 @@ import { NgOptimizedImage } from '@angular/common';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-dossier-title-card',
-  standalone: true,
-  templateUrl: './dossier-title-card.component.html',
-  styleUrl: './dossier-title-card.component.scss',
-  imports: [NgOptimizedImage],
+    selector: 'app-dossier-title-card',
+    templateUrl: './dossier-title-card.component.html',
+    styleUrl: './dossier-title-card.component.scss',
+    imports: [NgOptimizedImage]
 })
 export class DossierTitleCardComponent {
   @Input({ required: true }) img: string;

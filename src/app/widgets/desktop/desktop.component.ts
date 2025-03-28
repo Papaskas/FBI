@@ -6,9 +6,9 @@ import { DesktopBackgroundComponent } from '@widgets/desktop/desktop-background/
 
 @Component({
   selector: 'app-desktop',
-  standalone: true,
   imports: [DesktopShortcutComponent, DockBarComponent, DesktopBackgroundComponent],
   templateUrl: './desktop.component.html',
+  standalone: true,
   styleUrl: './desktop.component.scss',
 })
 export class DesktopComponent {
