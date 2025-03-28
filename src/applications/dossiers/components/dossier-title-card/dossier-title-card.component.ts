@@ -1,21 +1,22 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
 import { Router } from '@angular/router';
 
 @Component({
-    selector: 'app-dossier-title-card',
-    templateUrl: './dossier-title-card.component.html',
-    styleUrl: './dossier-title-card.component.scss',
-    imports: [NgOptimizedImage]
+  selector: 'app-dossier-title-card',
+  templateUrl: './dossier-title-card.component.html',
+  styleUrl: './dossier-title-card.component.scss',
+  standalone: true,
+  imports: [NgOptimizedImage],
 })
 export class DossierTitleCardComponent {
-  @Input({ required: true }) img: string;
+  img = input.required<string>();
 
-  @Input({ required: true }) fullName: string;
+  fullName = input.required<string>();
 
-  @Input({ required: true }) crime: string;
+  crime = input.required<string>();
 
-  @Input({ required: true }) NCIC: string;
+  NCIC = input.required<string>();
 
   constructor(private readonly router: Router) {}
 

@@ -1,4 +1,5 @@
-@import 'fonts', 'normalize';
+@use 'fonts';
+@use 'normalize';
 
 body {
   font-family: 'Roboto', sans-serif;

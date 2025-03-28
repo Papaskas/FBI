@@ -1,4 +1,4 @@
-@import 'fonts';
+@use 'fonts';
 
 @mixin font-size($size) {
   $remSize: $size / 16px;

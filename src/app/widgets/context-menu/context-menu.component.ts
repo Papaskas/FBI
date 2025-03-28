@@ -1,4 +1,4 @@
-import { Component, input, model } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 import { MenuItem } from '@entities/MenuItem';
 import { MatList, MatListItem } from '@angular/material/list';
 
@@ -12,5 +12,5 @@ import { MatList, MatListItem } from '@angular/material/list';
 export class ContextMenuComponent {
   items = input.required<MenuItem[]>();
 
-  // trigger = output();
+  trigger = output<void>();
 }

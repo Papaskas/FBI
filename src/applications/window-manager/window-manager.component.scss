@@ -1,18 +1,18 @@
-@import '../../sass/variables';
+@use 'variables' as vars;
 
 .window-manager {
-  background-color: $Black2;
+  background-color: vars.$Black2;
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   width: 100%;
   height: calc(100% - 50px); //dock-bar
-  color: $White;
+  color: vars.$White;
 
   &__header {
     padding-left: 10px;
-    background-color: $Black;
+    background-color: vars.$Black;
     height: 45px;
 
     display: flex;
@@ -23,12 +23,12 @@
   &__close {
     cursor: pointer;
     height: 100%;
-    color: $White;
+    color: vars.$White;
     padding: 0 15px;
     transition: background-color 300ms;
 
     &:hover, &:focus {
-      background-color: $Error;
+      background-color: vars.$Error;
     }
   }
 }

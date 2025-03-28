@@ -1,4 +1,4 @@
-@import 'variables';
+@use 'variables' as vars;
 
 .title-card {
   position: relative;
@@ -12,7 +12,7 @@
 
   padding: 15px;
   border-radius: 15px;
-  background-color: rgba($Black, .6);
+  background-color: rgba(vars.$Black, .6);
 
   &__img {
     height: 200px;
@@ -35,15 +35,15 @@
 
   &__open-dossier {
     cursor: pointer;
-    color: $White;
-    background-color: $Black3;
+    color: vars.$White;
+    background-color: vars.$Black3;
     border-radius: 5px;
     padding: 10px;
     transition: all 150ms;
 
     &:active, &:focus, &:hover {
-      background-color: rgba($Black3, .6);
-      box-shadow: $BG 0 0 0 5px;
+      background-color: rgba(vars.$Black3, .6);
+      box-shadow: vars.$BG 0 0 0 5px;
     }
   }
 }

@@ -1,13 +1,13 @@
-@import 'variables';
+@use 'variables' as vars;
 
 .start-menu {
   height: 100%;
-  color: $White;
+  color: vars.$White;
   cursor: pointer;
   border-radius: 0 15px 0 0;
   padding: 0 15px;
 
   &:hover, &:active, &:focus {
-    background-color: rgba($Black, .3);
+    background-color: rgba(vars.$Black, .3);
   }
 }
