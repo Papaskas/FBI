@@ -30,14 +30,20 @@
       "@app/*": [
         "app/*"
       ],
-      "@os/*": [
-        "OS/*"
-      ],
       "@services/*": [
-        "app/services/*"
+        "infrastructure/services/*"
+      ],
+      "@constants/*": [
+        "infrastructure/constants/*"
+      ],
+      "@entities/*": [
+        "domain/entities/*"
       ],
       "@widgets/*": [
         "app/widgets/*"
+      ],
+      "@applications/*": [
+        "applications/*"
       ],
       "@dossiers/*": [
         "applications/dossiers/*"

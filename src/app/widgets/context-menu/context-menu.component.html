@@ -1,0 +1,10 @@
+<mat-list>
+    @for (item of items; track item.title) {
+        <mat-list-item
+            (click)="item.onClick()"
+            (keyup.enter)="item.onClick()"
+        >
+            {{ item.title }}
+        </mat-list-item>
+    }
+</mat-list>

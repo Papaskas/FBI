@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { WindowManagerComponent } from '../window-manager/window-manager.component';
+import { WindowManagerComponent } from '@applications/window-manager/window-manager.component';
+import { Application } from '@entities/Application';
 
 @Component({
   selector: 'app-doom',
@@ -8,4 +9,6 @@ import { WindowManagerComponent } from '../window-manager/window-manager.compone
   styleUrl: './doom.component.scss',
   imports: [WindowManagerComponent],
 })
-export class DoomComponent {}
+export class DoomComponent implements Application {
+  name = 'DOOM';
+}

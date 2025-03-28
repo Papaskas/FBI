@@ -1,5 +1,4 @@
 import { Component, HostListener, Input } from '@angular/core';
-import { NgIf } from '@angular/common';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,12 +6,11 @@ import { Router } from '@angular/router';
   standalone: true,
   templateUrl: './window-manager.component.html',
   styleUrl: './window-manager.component.scss',
-  imports: [NgIf],
 })
 export class WindowManagerComponent {
-  @Input({ required: true }) appName: string;
+  @Input({ required: true }) name: string;
 
-  constructor(private router: Router) {}
+  constructor(private readonly router: Router) {}
 
   @HostListener('document:keyup.escape')
   protected async closeApp() {

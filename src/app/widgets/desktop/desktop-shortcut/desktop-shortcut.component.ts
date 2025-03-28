@@ -12,13 +12,13 @@ import { Router } from '@angular/router';
 export class DesktopShortcutComponent {
   @Input({ required: true }) icon: string;
 
-  @Input({ required: true }) shortName: string;
+  @Input({ required: true }) name: string;
 
-  @Input({ required: true }) url: string;
+  @Input({ required: true }) location: string;
 
   constructor(private readonly router: Router) {}
 
   protected async open() {
-    await this.router.navigate([this.url]);
+    await this.router.navigate([this.location]);
   }
 }

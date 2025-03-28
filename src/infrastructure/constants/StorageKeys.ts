@@ -1,4 +1,4 @@
-import { StorageKey } from '../../domain/entities/StorageKey';
+import { StorageKey } from '@entities/StorageKey';
 
 export const storageKeys = {
   token: {
