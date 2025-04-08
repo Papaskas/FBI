@@ -3,6 +3,12 @@
   "ignorePatterns": [
     "projects/**/*"
   ],
+  "settings": {
+    "import/resolver": {
+      "typescript": {},
+      "yarn-pnp": {}
+    }
+  },
   "overrides": [
     {
       "files": [
