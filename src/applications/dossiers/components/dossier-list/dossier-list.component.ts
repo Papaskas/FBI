@@ -7,6 +7,7 @@ import DB from '@dossiers/data';
   templateUrl: './dossier-list.component.html',
   styleUrl: './dossier-list.component.scss',
   imports: [DossierTitleCardComponent],
+  standalone: true,
 })
 export class DossierListComponent {
   protected readonly dossiers = DB.getDossiers();

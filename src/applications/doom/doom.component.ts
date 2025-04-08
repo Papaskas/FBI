@@ -7,6 +7,7 @@ import { Application } from '@entities/Application';
   templateUrl: './doom.component.html',
   styleUrl: './doom.component.scss',
   imports: [WindowManagerComponent],
+  standalone: true,
 })
 export class DoomComponent implements Application {
   name = 'DOOM';

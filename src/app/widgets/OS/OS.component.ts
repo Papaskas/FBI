@@ -7,5 +7,6 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './OS.component.html',
   styleUrl: './OS.component.scss',
   imports: [DesktopComponent, RouterOutlet],
+  standalone: true,
 })
 export class OSComponent {}
