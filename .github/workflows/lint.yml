@@ -37,4 +37,4 @@ jobs:
         run: yarn install
 
       - name: Run lint
-        run: ng lint
+        run: yarn run lint
