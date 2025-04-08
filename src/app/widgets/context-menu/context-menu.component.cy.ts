@@ -1,7 +1,7 @@
-import { ContextMenuComponent } from './context-menu.component'
+import { ContextMenuComponent } from './context-menu.component';
 
 describe('ContextMenuComponent', () => {
   it('should mount', () => {
-    cy.mount(ContextMenuComponent)
-  })
-})
+    cy.mount(ContextMenuComponent);
+  });
+});
