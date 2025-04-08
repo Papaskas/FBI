@@ -5,6 +5,10 @@
     "name": "Pavel Glukhikh",
     "url": "https://github.com/Papaskas"
   },
+  "engines": {
+    "node": "20.10",
+    "yarn": "4.8.1"
+  },
   "version": "0.0.1",
   "scripts": {
     "ng": "ng",
