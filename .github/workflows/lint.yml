@@ -34,7 +34,7 @@ jobs:
           cache: 'yarn'
 
       - name: Install dependencies
-        run: yarn install
+        run: yarn install --immutable
 
       - name: Run lint
         run: yarn run lint
